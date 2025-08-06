@@ -1,0 +1,25 @@
+#Test_Case : 1
+Sum of values in given range = 15 
+Updated sum of values in given range = 22 
+#Test_Case : 2
+Sum of values in given range = 15 
+Sum of values in given range = 27 
+Updated sum of values in given range = 22 
+Updated sum of values in given range = 23 
+#Test_Case : 3
+Sum of values in given range = 279 
+Sum of values in given range = 339 
+Updated sum of values in given range = 269 
+Invalid InputUpdated sum of values in given range = 329 
+#Test_Case : 4
+Sum of values in given range = 322 
+Sum of values in given range = 262 
+Updated sum of values in given range = 359 
+Updated sum of values in given range = 309 
+#Test_Case : 5
+Sum of values in given range = 103 
+Sum of values in given range = 144 
+Sum of values in given range = 273 
+Updated sum of values in given range = 107 
+Updated sum of values in given range = 125 
+Updated sum of values in given range = 288

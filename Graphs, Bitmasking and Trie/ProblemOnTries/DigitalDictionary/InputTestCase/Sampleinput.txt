@@ -1,0 +1,11 @@
+4
+pet
+peter
+rat
+rack
+5
+pe
+pet
+r
+rac
+rat

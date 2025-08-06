@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://spojtoolkit.com/TestCaseGenerator/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Test Case Generator</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="./Test Case Generator_files/css" rel="stylesheet">
+    <link href="./Test Case Generator_files/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./Test Case Generator_files/default.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./Test Case Generator_files/custom.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./Test Case Generator_files/fonts.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style></head>
+
+<body style="">
+
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="header-container">
+			<div id="logo">
+				<h1><a href="http://spojtoolkit.com/home">SPOJ Toolkit</a></h1>
+			</div>
+			<div id="menu" style="float: right;">
+				<ul>
+					<li id="Index"><a href="http://spojtoolkit.com/" class="current_page_item" accesskey="1" title=""><span style="margin-right: 5px" class="glyphicon glyphicon-home"></span>Home</a></li>
+					<li id="Contribute"><a href="http://spojtoolkit.com/contribute/" accesskey="2" title=""><span style="margin-right: 5px" class="glyphicon glyphicon-check"></span>Contribute</a></li>
+					<li id="TestCaseGenerator" class="current_page_item"><a href="http://spojtoolkit.com/TestCaseGenerator/" accesskey="3" title=""><span style="margin-right: 5px" class="glyphicon glyphicon-wrench"></span>Test Case Generator</a></li>
+					<li id="Contributors"><a href="http://spojtoolkit.com/contributors/" accesskey="4" title=""><span style="margin-right: 5px" class="glyphicon glyphicon-user"></span>Contributors</a></li>
+					<li id="Help"><a href="http://spojtoolkit.com/Help/" accesskey="5" title=""><span style="margin-right: 5px" class="glyphicon glyphicon-info-sign"></span>Help</a></li>
+					<li id="AboutUs"><a href="http://spojtoolkit.com/AboutUs/" accesskey="6" title=""><span style="margin-right: 5px" class="glyphicon glyphicon-user"></span>About Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="page" class="container">
+	        <div class="modal fade" id="examplesModal" style="z-index: 10000;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            	<div class="modal-dialog">
+            		<div class="modal-content">
+            			<div class="modal-header">
+            				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            				<h4 class="modal-title fontColor">Examples</h4>
+            			</div>
+            			<div class="modal-body" id="modalBodyId">
+            				<p>
+            				</p><ol>
+                            	<li>
+                            
+									<i class="fontGreen">To generate a string consisting of characters "abcd" such that c occurs maximum number of times in the resulting string,</i><br>
+									<br>
+									In the <b>Characters Allowed</b> box,
+									enter a string containing a,b,c,d in which c occurs more number of times than the rest.<br>
+									For example, to generate strings similar to 
+								    <div class="well">cababccbcccbcddccbdccccbcdcccbcbacccccbcccccdcccab</div>
+								    you may enter a string like <b>abcccccd</b> or <b> bccccbcccda</b> or <b>cccccccccccbbddaa</b> etc. in the <b>Characters Allowed</b> box.
+								    <br>
+							   
+								</li>
+							<br>
+							<br>
+							    <li>
+									<i class="fontGreen">To generate a 2D maze containing . and # where . represents a free cell ,# represents a wall and . occurs more number of times than #.</i>
+									<br><br>
+									In the <b>Characters Allowed</b> box,
+									enter a string which contains a large number of . compared to #.<br>
+									For example, to generate strings similar to 
+									<div class="well">.......#.<br>
+									....#....<br>
+									...#..#..<br>
+									#.....#..<br></div>
+								    you may enter a string like <b>#...##......###.....</b> or <b>...#...#....</b> etc. in the <b>Characters Allowed</b> box.
+								    
+							    </li>
+                             </ol>
+                             <p></p>
+            			</div>
+            			<div class="modal-footer">
+           					<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    	</div>
+            		</div>
+           		</div>
+           	</div>
+            <div class="row">
+              <div class="col-xs-6">
+              	
+              		<div class="bhoechie-tab-container">
+			            <div class="col-xs-3 bhoechie-tab-menu">
+			              <div class="list-group">
+			                <a href="http://spojtoolkit.com/TestCaseGenerator/#" class="list-group-item text-center">
+			                  <h4 class="glyphicon glyphicon-pencil"></h4><br>Numbers
+			                </a>
+			                <a href="http://spojtoolkit.com/TestCaseGenerator/#" class="list-group-item text-center">
+			                  <h4 class="glyphicon glyphicon-th"></h4><br>Arrays
+			                </a>
+			                <a href="http://spojtoolkit.com/TestCaseGenerator/#" class="list-group-item text-center currentHighlighted">
+			                  <h4 class="glyphicon glyphicon-align-left"></h4><br>Strings
+			                </a>
+			                <a href="http://spojtoolkit.com/TestCaseGenerator/#" class="list-group-item text-center">
+			                  <h4 class="glyphicon glyphicon-tree-deciduous"></h4><br>Trees
+			                </a>
+			                <a href="http://spojtoolkit.com/TestCaseGenerator/#" class="list-group-item text-center">
+			                  <h4 class="glyphicon glyphicon-asterisk"></h4><br>Graphs
+			                </a>
+			              </div>
+		            	</div>
+			            <div class="col-xs-9 bhoechie-tab">
+			                <!-- <h3>Input Parameters</h3>  -->
+			                <div class="bhoechie-tab-content">
+			                    <div class="panel-group show" id="Number">
+    <div class="panel panel-default" onclick="setClickId(&#39;RandomNumber&#39;)">
+        <div class="panel-heading">
+           <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#Number" href="http://spojtoolkit.com/TestCaseGenerator/#RandomNumber" class="collapsed">
+                 Random Number
+              </a>
+           </h4>
+        </div>
+
+        <div id="RandomNumber" class="panel-collapse collapse" style="height: auto;">
+        	<form onsubmit="generateOutput();return false;">
+           		<div class="panel-body">
+	                 <div class="row">
+	                    <div class="col-xs-6">
+	                        <b>Minimum Value</b>
+	                        <input type="number" class="form-control" id="RandomNumber1" min="-1000000000000000000" max="1000000000000000000" required="">
+	                    </div>
+	                    <div class="col-xs-6">
+	                        <b>Maximum Value</b>
+	                        <input type="number" class="form-control" id="RandomNumber2" min="-1000000000000000000" max="1000000000000000000" required="">
+	                    </div>
+	                </div>
+	                <input id="RandomNumber_Submit" type="submit" style="display:none">
+           		</div>
+           	</form>
+        </div>
+    </div>
+</div>			                </div>
+			                <div class="bhoechie-tab-content">
+			                    <div class="panel-group" id="Arrays">
+    <div class="panel panel-default" onclick="setClickId(&#39;RandomArray&#39;)">
+        <div class="panel-heading">
+           <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#Arrays" href="http://spojtoolkit.com/TestCaseGenerator/#RandomArray" class="collapsed">
+                 Random Array
+              </a>
+           </h4>
+        </div>
+
+        <div id="RandomArray" class="panel-collapse collapse" style="height: auto;">
+        <form onsubmit="generateOutput(); return false;">
+	           <div class="panel-body">
+	                 <div class="row">
+	                    <div class="col-xs-6">
+	                        <b>Array Size</b>
+	                        <input type="number" class="form-control" id="RandomArray1" placeholder="N" min="1" max="1000000" required="">
+	                    </div>
+	                    <div class="col-xs-6" data-toggle="tooltip" data-placement="left" title="" data-original-title="Generate an Array of N unique integers?">
+	                        <b>Distinct Numbers</b>
+	                         <select class="form-control" id="RandomArray2">
+	                           <option>FALSE</option>
+	                           <option>TRUE</option>
+	                         </select>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-xs-6">
+	                        <b>Minimum Value</b>
+	                        <input type="number" class="form-control" id="RandomArray3" min="-1000000000000000000" max="1000000000000000000" required="">
+	                    </div>
+	                    <div class="col-xs-6">
+	                        <b>Maximum Value</b>
+	                        <input type="number" class="form-control" id="RandomArray4" min="-1000000000000000000" max="1000000000000000000" required="">
+	                    </div>
+	                </div>
+	               <div class="row">
+	                   <div class="col-xs-6" data-toggle="tooltip" data-placement="right" title="" data-original-title="Print the value of N in the beginning of each test case?">
+	                       <b>Print N</b>
+	                       <select class="form-control" id="RandomArray5">
+	                           <option>TRUE</option>
+	                           <option>FALSE</option>
+	                       </select>
+	                   </div>
+	                   <div class="col-xs-6"></div>
+	               </div>
+	               <input id="RandomArray_Submit" type="submit" style="display:none">
+	           </div>
+           </form>
+        </div>
+    </div>
+    <br>
+    <div class="panel panel-default" onclick="setClickId(&#39;RandomArrayOfPairs&#39;)">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#Arrays" href="http://spojtoolkit.com/TestCaseGenerator/#RandomArrayOfPairs" class="collapsed">
+                   Random Array Of Pairs
+                </a>
+            </h4>
+        </div>
+    <div id="RandomArrayOfPairs" class="panel-collapse collapse">
+    	<form onsubmit="generateOutput(); return false;">
+       		<div class="panel-body">
+	          <div class="row">
+	               <div class="col-xs-6">
+	                    <b>Number Of Pairs</b>
+	                    <input type="number" class="form-control" id="RandomArrayOfPairs1" placeholder="N" min="1" max="1000000" required="">
+	                </div>
+	                <div class="col-xs-6" data-toggle="tooltip" data-placement="left" title="" data-original-title="Generate an array of N distinct pairs of integers?">
+	                   <!-- <label for="RandomArray4"> Distinct Pairs</label> -->
+	                     <b>Distinct Pairs</b>
+	                     <select class="form-control" id="RandomArrayOfPairs2">
+	                       <option>FALSE</option>
+	                       <option>TRUE</option>
+	                     </select>
+	                </div>
+	          </div>
+	          <div class="row">
+	                <div class="col-xs-6">
+	                    <b>Min First Element</b>
+	                    <input type="number" class="form-control" id="RandomArrayOfPairs3" placeholder="min(A)" min="-1000000000000000000" max="1000000000000000000" required="">
+	                </div>
+	                <div class="col-xs-6">
+	                    <b>Max First Element</b>
+	                    <input type="number" class="form-control" id="RandomArrayOfPairs4" placeholder="max(A)" min="-1000000000000000000" max="1000000000000000000" required="">
+	                </div>
+	          </div>
+	           <div class="row">
+	                <div class="col-xs-6">
+	                    <b>Min Second Element</b>
+	                    <input type="number" class="form-control" id="RandomArrayOfPairs5" placeholder="min(B)" min="-1000000000000000000" max="1000000000000000000" required="">
+	                </div>
+	                <div class="col-xs-6">
+	                    <b>Max Second Element</b>
+	                    <input type="number" class="form-control" id="RandomArrayOfPairs6" placeholder="max(B)" min="-1000000000000000000" max="1000000000000000000" required="">
+	                </div>
+	          </div>
+	           <div class="row">
+	                   <div class="col-xs-6" data-toggle="tooltip" data-placement="right" title="" data-original-title="In every pair, would the 1st element be smaller than the 2nd?">
+	                       <b> A must be less than B </b>
+	                       <select class="form-control" id="RandomArrayOfPairs7">
+	                           <option>FALSE</option>
+	                           <option>TRUE</option>
+	                       </select>
+	                   </div>
+	                   <div class="col-xs-6" data-toggle="tooltip" data-placement="left" title="" data-original-title="Print the Value of N in the beginning of each test case?">
+	                       <b>Print N</b>
+	                       <select class="form-control" id="RandomArrayOfPairs8">
+	                           <option>TRUE</option>
+	                           <option>FALSE</option>
+	                       </select>
+	                   </div>
+	                   
+	           </div>
+	           <input id="RandomArrayOfPairs_Submit" type="submit" style="display:none">
+			</div>
+		</form>
+    </div>
+</div>
+<br>  
+<div class="panel panel-default" onclick="setClickId(&#39;RandomMatrix&#39;)">
+    <div class="panel-heading">
+       <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#Arrays" href="http://spojtoolkit.com/TestCaseGenerator/#RandomMatrix" class="collapsed">
+             Random Matrix
+          </a>
+       </h4>
+    </div>
+    <div id="RandomMatrix" class="panel-collapse collapse">
+    <form onsubmit="generateOutput(); return false;">
+       		<div class="panel-body">
+	          <div class="row">
+	                <div class="col-xs-6">
+	                    <b>Number Of Rows</b>
+	                    <input type="number" class="form-control" id="RandomMatrix1" placeholder="N" min="1" max="100000" required="">
+	                </div>
+	                <div class="col-xs-6">
+	                    <b>Number Of Columns</b>
+	                    <input type="number" class="form-control" id="RandomMatrix2" placeholder="M" min="1" max="100000" required="">
+	                </div>
+	            </div>
+	           <div class="row">
+	                <div class="col-xs-6">
+	                    <b>Minimum Value</b>
+	                    <input type="number" class="form-control" id="RandomMatrix3" min="-1000000000000000000" max="1000000000000000000" required="">
+	                </div>
+	                <div class="col-xs-6">
+	                    <b>Maximum Value</b>
+	                    <input type="number" class="form-control" id="RandomMatrix4" min="-1000000000000000000" max="1000000000000000000" required="">
+	                </div>
+	            </div>
+	           <div class="row">
+	               <div class="col-xs-6" data-toggle="tooltip" data-placement="right" title="" data-original-title="Generate all unique elements in the matrix?">
+	                    <b>Distinct Numbers</b>
+	                     <select class="form-control" id="RandomMatrix5">
+	                       <option>FALSE</option>
+	                       <option>TRUE</option>
+	                     </select>
+	                </div>
+	               <div class="col-xs-6" data-toggle="tooltip" data-placement="left" title="" data-original-title="Print the values of N &amp; M in the beginning of each test case?">
+	                        <b>Print N,M</b>
+	                       <select class="form-control" id="RandomMatrix6">
+	                           <option>TRUE</option>
+	                           <option>FALSE</option>
+	                       </select>
+	               </div>
+	           </div>
+	           <input id="RandomMatrix_Submit" type="submit" style="display:none">
+       		</div>
+       	</form>
+    </div>
+</div>
+</div>			                </div>
+			    			<div class="bhoechie-tab-content currentHighlighted">
+			                    <div class="panel-group" id="Strings">
+	<div class="panel panel-default" onclick="setClickId(&#39;RandomString&#39;)">
+	    <div class="panel-heading">
+	       <h4 class="panel-title">
+	          <a data-toggle="collapse" data-parent="#Strings" href="http://spojtoolkit.com/TestCaseGenerator/#RandomString" class="">
+	             Random String
+	          </a>
+	       </h4>
+	    </div>
+	
+	    <div id="RandomString" class="panel-collapse in" style="height: auto;">
+	    <form onsubmit="generateOutput(); return false;">
+	       
+	       <div class="panel-body">
+	             <div class="row">
+	                <div class="col-xs-6">
+	                    <b>String Size</b>
+	                    <input type="number" class="form-control" id="RandomString1" placeholder="N" min="1" max="1000000" required="">
+	                </div>
+	                <div class="col-xs-6">
+	                    <b> Distinct Characters</b>
+	                     <select class="form-control" id="RandomString2">
+	                       <option>FALSE</option>
+	                       <option>TRUE</option>
+	                     </select>
+	                </div>
+	            </div>
+	           <div class="row">
+	               <div class="col-xs-6" data-toggle="tooltip" data-placement="right" title="" data-original-title="Specify the characters to be randomly generated. Ex: &#39;ab&#39;(without quotes)">
+	                     <b>Characters Allowed</b>
+	                     <div class=" btn-group">
+		                   <button type="button" class="btn btn-default" onclick="fillStringInput(&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;)" id="RandomString3">A-Z</button>
+		                     <button type="button" class="btn btn-default" onclick="fillStringInput(&#39;abcdefghjklmnopqrstuvwxyz&#39;)" id="RandomString4">a-z</button>
+		                   <button type="button" class="btn btn-default" onclick="fillStringInput(&#39;0123456789&#39;)" id="RandomString5">0-9</button>
+	               		</div>
+	               </div>   
+	
+	               
+	               <div class="col-xs-6"><br><a href="javascript:$(&#39;#examplesModal&#39;).modal(&#39;show&#39;);">Refer Examples</a></div>
+	           </div>
+	            
+	           <div class="row">
+	           		<div class="col-xs-12">
+	           			<input type="text" class="form-control" id="RandomString6" maxlength="100" placeholder="Please Specify as a String (Ex: #@$%^*?&amp;)">
+	           		</div>
+	           </div>
+	           <div class="row">
+	           		<div class="col-xs-6">
+	           		    <b>Print N</b>
+	           			<select class="form-control" id="RandomString7">
+	                       <option>TRUE</option>
+	                       <option>FALSE</option>
+	                     </select>
+	           		</div>
+	           		<div class="col-xs-6"></div>
+	           </div>
+	            <input id="RandomString_Submit" type="submit" style="display:none">
+	       </div>
+	       </form>
+	    </div>
+	 </div>
+	 <br>
+	 <div class="panel panel-default" onclick="setClickId(&#39;RandomCharacterMatrix&#39;)">
+	    <div class="panel-heading">
+	       <h4 class="panel-title">
+	          <a data-toggle="collapse" data-parent="#Strings" href="http://spojtoolkit.com/TestCaseGenerator/#RandomCharacterMatrix" class="collapsed">
+	             Random Character Matrix
+	          </a>
+	       </h4>
+	    </div>
+	
+	    <div id="RandomCharacterMatrix" class="panel-collapse collapse">
+	    <form onsubmit="generateOutput(); return false;">
+	       <div class="panel-body">
+	             <div class="row">
+	                <div class="col-xs-6">
+	                    <b>Number Of Rows</b>
+	                    <input type="number" class="form-control" id="RandomCharacterMatrix1" placeholder="N" min="1" max="100000" required="">
+	                </div>
+	                <div class="col-xs-6">
+	                    <b>Number Of Columns</b>
+	                    <input type="number" class="form-control" id="RandomCharacterMatrix2" placeholder="M" min="1" max="100000" required="">
+	                </div>
+	            </div>
+	           <div class="row">
+	               <div class="col-xs-6" data-toggle="tooltip" data-placement="right" title="" data-original-title="Specify the characters to be randomly generated. Ex: &#39;ab&#39;(without quotes)">
+	                     <b>Characters Allowed</b>
+	                     <div class="btn-group">
+			                   <button type="button" class="btn btn-default" onclick="fillStringInput(&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;)" id="RandomCharacterMatrix3">A-Z</button>
+			                     <button type="button" class="btn btn-default" onclick="fillStringInput(&#39;abcdefghjklmnopqrstuvwxyz&#39;)" id="RandomCharacterMatrix4">a-z</button>
+			                   <button type="button" class="btn btn-default" onclick="fillStringInput(&#39;0123456789&#39;)" id="RandomCharacterMatrix5">0-9</button>
+	               		</div>
+	               </div>
+	              <div class="col-xs-6"><br><a href="javascript:$(&#39;#examplesModal&#39;).modal(&#39;show&#39;);">Refer Examples</a></div>
+	           </div>
+	           
+	           <div class="row">
+	           		<div class="col-xs-12">
+	           			<input type="text" class="form-control" id="RandomCharacterMatrix6" maxlength="100" placeholder="Please Specify as a String (Ex: #@$%^*?&amp;)">
+	           		</div>
+	          </div>
+	          <div class="row">
+	          		<div class="col-xs-6">
+	           		    <b>Print N,M</b>
+	           			<select class="form-control" id="RandomCharacterMatrix7">
+	                       <option>TRUE</option>
+	                       <option>FALSE</option>
+	                     </select>
+	           		</div>
+	           		<div class="col-xs-6"></div>
+	          </div>
+	            <input id="RandomCharacterMatrix_Submit" type="submit" style="display:none">
+	       </div>
+	       </form>
+	    </div>
+	 </div>
+</div>			                </div>
+			                <div class="bhoechie-tab-content">
+			                    <div class="panel-group" id="Trees">
+<div class="panel panel-default" onclick="setClickId(&#39;RandomUnweightedTree&#39;)">
+    <div class="panel-heading">
+       <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#Trees" href="http://spojtoolkit.com/TestCaseGenerator/#RandomUnweightedTree" class="collapsed">
+             Random Unweighted Trees
+          </a>
+       </h4>
+    </div>
+
+    <div id="RandomUnweightedTree" class="panel-collapse collapse">
+    <form onsubmit="generateOutput(); return false;">
+       <div class="panel-body">
+           <div class="row">
+               <div class="col-xs-6">
+                     <b>Number Of Nodes</b>
+                     <input type="number" class="form-control" id="RandomUnweightedTree1" placeholder="N" min="1" max="100000" required="">
+               </div>
+               <div class="col-xs-6">
+                   <b>Indexed From</b>
+                     <select class="form-control" id="RandomUnweightedTree2">
+                       <option>1</option>
+                       <option>0</option>
+                     </select>
+               </div>
+            </div>
+           <div class="row">
+               <div class="col-xs-6">
+                   <b>Print N</b>
+                   <select class="form-control" id="RandomUnweightedTree3">
+                       <option>TRUE</option>
+                       <option>FALSE</option>
+                   </select>
+               </div>
+               <div class="col-xs-6"></div>
+           </div>
+           <input id="RandomUnweightedTree_Submit" type="submit" style="display:none"> 
+       </div>
+       </form>
+    </div>
+ </div>
+<br>  
+<div class="panel panel-default" onclick="setClickId(&#39;RandomWeightedTree&#39;)">
+    <div class="panel-heading">
+       <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#Trees" href="http://spojtoolkit.com/TestCaseGenerator/#RandomWeightedTree" class="collapsed">
+             Random Weighted Trees
+          </a>
+       </h4>
+    </div>
+    <div id="RandomWeightedTree" class="panel-collapse collapse">
+    <form onsubmit="generateOutput(); return false;">
+       <div class="panel-body">
+          <div class="row">
+              <div class="col-xs-6">
+                <b>Number Of Nodes</b>
+                <input type="number" class="form-control" id="RandomWeightedTree1" placeholder="N" min="1" max="100000" required="">
+              </div>
+              <div class="col-xs-6">
+                  <b> Indexed From </b>
+                     <select class="form-control" id="RandomWeightedTree2">
+                       <option>1</option>
+                       <option>0</option>
+                     </select>
+              </div>
+          </div>
+          <div class="row">
+                <div class="col-xs-6">
+                    <b>Minimum Weight</b>
+                    <input type="number" class="form-control" id="RandomWeightedTree3" min="-1000000000000000000" max="1000000000000000000" required="">
+                </div>
+                <div class="col-xs-6">
+                    <b>Maximum Weight</b>
+                    <input type="number" class="form-control" id="RandomWeightedTree4" min="-1000000000000000000" max="1000000000000000000" required="">
+                </div>
+         </div>
+           <div class="row">
+               <div class="col-xs-6">
+                   <b>Print N</b>
+                   <select class="form-control" id="RandomWeightedTree5">
+                       <option>TRUE</option>
+                       <option>FALSE</option>
+                   </select>
+               </div>
+               <div class="col-xs-6"></div>
+           </div>
+           <input id="RandomWeightedTree_Submit" type="submit" style="display:none"> 
+       </div>
+       </form>
+    </div>
+ </div>
+</div>			                </div>
+			                <div class="bhoechie-tab-content">
+			                    <div class="panel-group" id="Graphs">
+<div class="panel panel-default" onclick="setClickId(&#39;RandomUnweightedGraph&#39;)">
+    <div class="panel-heading">
+       <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#Graphs" href="http://spojtoolkit.com/TestCaseGenerator/#RandomUnweightedGraph" class="collapsed">
+             Random Unweighted Graphs
+          </a>
+       </h4>
+    </div>
+
+    <div id="RandomUnweightedGraph" class="panel-collapse collapse">
+    	<form onsubmit="generateOutput(); return false;">
+       <div class="panel-body">
+           <div class="row">
+               <div class="col-xs-6">
+                 <b>Number Of Nodes</b>
+                 <input type="number" class="form-control" id="RandomUnweightedGraph1" placeholder="N" min="1" max="100000" required="">
+               </div>
+               <div class="col-xs-6">
+                 <b>Number Of Edges</b>
+                 <input type="number" class="form-control" id="RandomUnweightedGraph2" placeholder="E" min="1" max="200000" required="">
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-xs-6">
+                     <b> Indexed From </b>
+                     <select class="form-control" id="RandomUnweightedGraph3">
+                       <option>1</option>
+                       <option>0</option>
+                     </select>
+               </div>
+               <div class="col-xs-6">
+                     <b>Print N,E</b>
+                     <select class="form-control" id="RandomUnweightedGraph4">
+                       <option>TRUE</option>
+                       <option>FALSE</option>
+                     </select>
+               </div>
+           </div>
+           <input id="RandomUnweightedGraph_Submit" type="submit" style="display:none">
+       </div>
+       </form>
+    </div>
+ </div>
+<br>  
+<div class="panel panel-default" onclick="setClickId(&#39;RandomWeightedGraph&#39;)">
+    <div class="panel-heading">
+       <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#Graphs" href="http://spojtoolkit.com/TestCaseGenerator/#RandomWeightedGraph" class="collapsed">
+             Random Weighted Graphs
+          </a>
+       </h4>
+    </div>
+    <div id="RandomWeightedGraph" class="panel-collapse collapse">
+       <form onsubmit="generateOutput(); return false;">
+       <div class="panel-body">
+          <div class="row">
+              <div class="col-xs-6">
+                <b>Number Of Nodes</b>
+                <input type="number" class="form-control" id="RandomWeightedGraph1" placeholder="N" min="1" max="100000" required="">
+              </div>
+              <div class="col-xs-6">
+                <b>Number Of Edges</b>
+                <input type="number" class="form-control" id="RandomWeightedGraph2" placeholder="E" min="1" max="200000" required="">
+              </div>
+          </div>
+          <div class="row">
+                <div class="col-xs-6">
+                    <b>Minimum Weight</b>
+                    <input type="number" class="form-control" id="RandomWeightedGraph3" min="-1000000000000000000" max="1000000000000000000" required="">
+                </div>
+                <div class="col-xs-6">
+                    <b>Maximum Weight</b>
+                    <input type="number" class="form-control" id="RandomWeightedGraph4" min="-1000000000000000000" max="1000000000000000000" required="">
+                </div>
+         </div>
+           <div class="row">
+               <div class="col-xs-6">
+                   <b>Indexed From</b>
+                     <select class="form-control" id="RandomWeightedGraph5">
+                       <option>1</option>
+                       <option>0</option>
+                     </select>
+               </div>
+               <div class="col-xs-6">
+                     <b>Print N,E </b>
+                     <select class="form-control" id="RandomWeightedGraph6">
+                       <option>TRUE</option>
+                       <option>FALSE</option>
+                     </select>
+               </div>
+           </div>
+           <input id="RandomWeightedGraph_Submit" type="submit" style="display:none">
+       </div>
+       </form>
+    </div>
+ </div>
+</div>			                </div>
+			                <br>
+			                <div class="row">
+                        			<div class="col-xs-6">
+			                            <b>Number of Test cases</b>
+			                            <input style="width:80%;" type="text" class="form-control" id="numberOfTestCases" value="1">
+			                        </div>
+			                        <div class="col-xs-3">
+			                             <br>
+			                            <button type="button" id="autoPop" class="btn btn-default" style="float:right" onclick="autoPopulate()">Auto Populate</button>
+			                        </div>
+			                        <div class="col-xs-3">
+			                             <br>
+			                            <button type="button" class="btn btn-primary" style="float:right" onclick="pressCorrespondingSubmitButton()">Generate</button>
+			                        </div>
+                    		</div>
+			            </div>
+        			</div>
+                    
+                </div>
+                
+                <div class="col-xs-6">
+                    <div id="dummyLinks"></div>
+                	<button class="btn btn-default" id="downloadButton" style="float:right;font-size:100%;cursor:pointer;">
+                		<span class="glyphicon glyphicon-save"></span>
+                	</button>
+	                <ul class="nav nav-tabs" id="myTab">
+	                	<li class="active"><a href="http://spojtoolkit.com/TestCaseGenerator/#currentOutput">Current Output</a></li>
+	                	<li><a href="http://spojtoolkit.com/TestCaseGenerator/#customOutput">Custom Output</a></li>
+	                </ul>
+	                <div class="tab-content">
+	                	<div id="currentOutput" class="tab-pane fade in active">
+	                	    <textarea rows="16" class="form-control" style="width: 100%" id="currentOutputBox"></textarea>
+	                		<br>
+	                		<div class="row">
+	                			<div id="showMsg" class="col-xs-8"><div class="alert alert-success"><span class="glyphicon glyphicon-ok"></span>  <b>Success!</b><br>Output Size : <i>0.028 KB</i><br></div></div>
+	                			<div class="col-xs-4">
+	                				<button type="button" class="btn btn-primary" style="float:right" onclick="appendCurrentOutput()">Append To Custom Output</button>
+	                			</div>
+	                		</div>
+	                	</div>
+	                	<div id="customOutput" class="tab-pane fade">
+	                	    <textarea rows="16" class="form-control" style="width: 100%" id="customOutputBox"></textarea>
+	                		<br>
+	                		<div class="row">
+	                			<div class="col-xs-9"></div>
+	                			<div class="col-xs-3">
+	                				<button type="button" class="btn btn-danger" style="float:right" onclick="clearCustomOutput()">Clear Custom Output</button>
+	                			</div>
+	                		</div>
+	                	</div>
+	                </div>
+	                <br>
+		         </div>
+            </div>
+	</div>
+</div>
+<div>
+	<div id="footer-wrapper">
+		<div id="footer" class="container">
+			<div id="box1">
+				<div class="title">
+					<h2>Latest Post</h2>
+				</div>
+				<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/spojtoolkit" data-width="350" data-height="250" data-colorscheme="light" data-hide-cover="true" data-show-facepile="true" data-show-border="true" data-header="false" data-show-posts="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=324&amp;height=250&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fspojtoolkit&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=350"><span style="vertical-align: bottom; width: 324px; height: 180px;"><iframe name="f15c307e087bfd8" width="350px" height="250px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="./Test Case Generator_files/page.html" style="border: none; visibility: visible; width: 324px; height: 180px;" class=""></iframe></span></div>
+			</div>
+			<div id="box2">
+				<div class="title">
+					<h2>Popular Links</h2>
+				</div>
+				<ul class="style1">
+					<li><a href="http://www.spoj.com/" target="_blank">SPOJ</a></li>
+					<li><a href="http://www.hackerearth.com/" target="_blank">HackerEarth</a></li>
+					<li><a href="http://code.activestate.com/recipes/577036/" target="_blank">SPOJ Backup Tool</a></li>
+					<li><a href="http://spojtool.appspot.com/" target="_blank">SPOJ User Tool</a></li>
+					
+				</ul>
+			</div>
+			<div id="box3">
+				<div class="title">
+					<h2>Contact Us</h2>
+				</div>
+				<ul class="style1">
+					<li><span class="glyphicon glyphicon-envelope" style="margin-right: 10px"></span>spojtoolkit@gmail.com</li>
+					<li><span class="glyphicon glyphicon-envelope" style="margin-right: 10px"></span>mitesh1158.11@bitmesra.ac.in</li>
+					<li><span class="glyphicon glyphicon-envelope" style="margin-right: 10px"></span>utkarsh1369.11@bitmesra.ac.in</li>
+					<li><a href="https://www.facebook.com/spojtoolkit" target="_blank" class="icon icon-facebook"><span style="margin-left: 15px">SPOJ Toolkit</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="copyright" style="background:#000000">
+		<p>© spojtoolkit.com. All rights reserved. | <a href="http://developer.hackerearth.com/" target="_blank">Powered By HackerEarth API</a></p>
+	</div>
+</div>
+<script id="facebook-jssdk" src="./Test Case Generator_files/sdk.js"></script><script src="./Test Case Generator_files/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){
+  	var url=window.location.href;
+  	if(url.charAt(url.length - 1) != "/")
+  	  	url +="/";
+  	//alert(url);
+    $('#menu ul li').removeClass("current_page_item");
+    if(url == "http://spojtoolkit.com/" )
+        $('#Index').addClass("current_page_item");
+    else if(url == "http://spojtoolkit.com/contribute/")
+        $('#Contribute').addClass("current_page_item");
+    else if(url == "http://spojtoolkit.com/contributors/")
+        $('#Contributors').addClass("current_page_item");
+    else if(url == "http://spojtoolkit.com/TestCaseGenerator/")
+        $('#TestCaseGenerator').addClass("current_page_item");
+    else if(url == "http://spojtoolkit.com/Help/")
+        $('#Help').addClass("current_page_item");
+    else if(url == "http://spojtoolkit.com/AboutUs/")
+        $('#AboutUs').addClass("current_page_item");
+});
+</script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<!--....................................................JAVASCRIPT Begins.....................................................-->
+<script src="./Test Case Generator_files/bootstrap.min.js"></script>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Test Case Generator_files/JW5GlLnAsFw.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Test Case Generator_files/JW5GlLnAsFw(1).html" style="border: none;"></iframe></div></div></div>
+<script type="text/javascript" src="./Test Case Generator_files/scripts.js"></script>
+<script type="text/javascript" src="./Test Case Generator_files/AutoPopulate.js"></script>
+
+<script type="text/javascript">
+var attempts = 0;
+var XHRs = {};
+
+function getDisplayMessage(obj) {
+	var responseStatus = obj.status;
+	var img = '<span class="glyphicon glyphicon-ok"></span>';
+	if(responseStatus == "AC") {
+		var content =  "<div class='alert alert-success'>" + img + "  <b>Success!</b><br>";
+			content += "Output Size : <i>" + obj.size + " KB</i><br>";
+			content += "</div>";
+	}
+	else {
+		content = "<div class='alert alert-danger'>" + obj.msg + "</div>";
+	}
+	return content;
+}
+
+function displayProgress(percentage) {
+	if(percentage > 100)
+		percentage = 100;
+	var content = '<div class="progress">';
+  	content += '<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="'+percentage+'" aria-valuemin="0" aria-valuemax="100" style="width: '+percentage+'%;">';
+    content += percentage +'%';
+  	content += '</div> </div>';
+  	return content;
+}
+function generateOutput(){
+	var functionCode = 1;
+	if(attempts > 0 && XHRs[functionCode] != null) {
+		XHRs[functionCode].abort();
+	}
+	attempts += 1;
+    var testCaseType = {
+         "RandomNumber":"2",
+         "RandomArray":"5",
+         "RandomArrayOfPairs":"8",
+         "RandomMatrix":"6",
+         "RandomString":"7",
+         "RandomCharacterMatrix":"7",
+         "RandomUnweightedTree":"3",
+         "RandomWeightedTree":"5",
+         "RandomUnweightedGraph":"4",
+         "RandomWeightedGraph":"6"
+     };
+     var input = document.getElementById('numberOfTestCases').value+"\n";
+     var problemId = testCaseClicked;
+
+     document.getElementById(testCaseClicked+'_Submit').click();
+     for(var i=1;i<=testCaseType[testCaseClicked];i++){
+         var inputElement = document.getElementById(testCaseClicked + i.toString());
+         if(inputElement.tagName == 'select'){
+             input = input + inputElement.Options[inputElement.selectedIndex].text + "\n";
+         }
+         else if(inputElement.tagName == 'BUTTON'){
+         }
+         else{
+             input = input + inputElement.value + "\n";
+         }
+     }
+     problemId = testCaseClicked;
+     
+     var queryString = "type=utilGen"+"&problemId="+problemId+"&testInput="+input+"&timeLimit=5";
+     var UrlForPhpScripts  = "http://spojtoolkit.com/src-drivers/";
+     var waitCallback = function () {
+     	var msg = 'Connecting to Server...';
+     	if(attempts > 1) {
+			msg += '(' + attempts + ')';
+        } 
+ 		document.getElementById('showMsg').innerHTML = '<div align="center" class="alert alert-warning">'+msg+'</div>';
+ 		document.getElementById("currentOutputBox").disabled= true;
+     }
+	 var processCallback = function (id, response) {		
+		var res = response.split("JSON_OBJECT_FOLLOWS");
+		if(res.length > 1) {
+			var responseSize = (res[1].length / 1024);
+			var totalSize = res[0];
+			var img = '<span class="glyphicon glyphicon-download"></span>';
+			document.getElementById('showMsg').innerHTML = displayProgress(Math.floor((responseSize / totalSize) * 100));
+			document.getElementById("currentOutputBox").disabled= true;
+		}
+		else {
+			document.getElementById('showMsg').innerHTML = '<div align="center" class="alert alert-warning">Initiating Download...</div>';
+	 		document.getElementById("currentOutputBox").disabled= true;
+		}
+		attempts = 0;
+		XHRs[functionCode] = null;
+	 }
+	 var successCallback = function (responseText) {
+		 try {
+			var res = responseText.split("JSON_OBJECT_FOLLOWS");
+         	var JSONdecodedObj = jQuery.parseJSON(res[1]);
+         }
+         catch(e) {
+         	document.getElementById('showMsg').innerHTML = "<div class='alert alert-danger'>A technical issue has occured. Sorry for the inconvenience!</div>";
+         	document.getElementById("currentOutputBox").disabled= false;
+         }
+		document.getElementById('showMsg').innerHTML = getDisplayMessage(JSONdecodedObj);
+		if(JSONdecodedObj.status == "AC")
+			document.getElementById("currentOutputBox").value= JSONdecodedObj.msg;
+		
+		document.getElementById("currentOutputBox").disabled= false;
+		attempts = 0;
+		XHRs[functionCode] = null;
+	 }	 
+
+	 var failureCallback = function () {
+		attempts = 0;
+	    var msg = 'There seems to be some Connectivity Issue with your Network.<br>Please try again!';	     
+	 	document.getElementById('showMsg').innerHTML = '<div class="alert alert-danger">'+msg+'</div>';
+	 	document.getElementById("currentOutputBox").disabled= false;
+	 }
+     var xhr = ajaxCall(UrlForPhpScripts+"ExecuteCodeOnAPI-driver.php",queryString, waitCallback, processCallback, successCallback, failureCallback);
+     XHRs[functionCode] = xhr;
+ } 
+</script>
+<script>
+    var testCaseClicked;
+    function setClickId(panelId){
+        testCaseClicked = panelId;
+    }
+    function pressCorrespondingSubmitButton(){
+    	document.getElementById(testCaseClicked+'_Submit').click();
+    }
+    function fillStringInput(alphabet){
+        if(testCaseClicked == "RandomString"){
+        	document.getElementById('RandomString6').value = document.getElementById('RandomString6').value + alphabet;
+        }
+        else if(testCaseClicked == "RandomCharacterMatrix"){
+        	document.getElementById('RandomCharacterMatrix6').value = document.getElementById('RandomCharacterMatrix6').value + alphabet;
+        }
+    }
+</script>
+<script>
+    var customOutputContent="";
+	function appendCurrentOutput(){
+		var currentOutputContent = document.getElementById('currentOutputBox').value;
+		customOutputContent = customOutputContent + currentOutputContent;
+		document.getElementById('customOutputBox').value = customOutputContent;	
+		if(currentOutputContent.length == 0) {
+			alert("No Content Present in the Current Window");
+			return false;
+		}	
+		document.getElementById('showMsg').innerHTML = '<div class="alert alert-info">The output of the Current window has been appended to the <b>Custom Output</b> Window.</div>';
+	}
+	function clearCustomOutput(){
+		customOutputContent = "";
+		document.getElementById('customOutputBox').value = customOutputContent;
+    }
+</script>
+<script>
+	$(document).ready(function() {
+	    $("#myTab a").click(function(e){
+	        e.preventDefault();
+	        $(this).tab('show');
+	    });
+	});
+	
+</script>
+
+<script>
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.currentHighlighted').removeClass("currentHighlighted");
+        $(this).addClass("currentHighlighted");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("currentHighlighted");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("currentHighlighted");
+        $("#myTab a:first").tab('show');
+        $('.panel-collapse').removeClass("in");
+        $('.panel-collapse').addClass("collapse");
+        $('.panel-title>a').addClass("collapsed");
+        testCaseClicked = null;
+    });
+    
+    $('#downloadButton').click(function(){
+        
+    	
+	    if($('#currentOutput').hasClass("active")){
+	    	var text=$('#currentOutputBox').val();
+	    }
+	    else{
+	    	var text=$('#customOutputBox').val();
+	    }
+	    var fileName = "toolkitTestGen-"+getRandomNumber(1,99)+".in";
+	    try {
+		    var browserSupport;
+		    browserSupport = downloadFile(fileName,text); 
+		    if(browserSupport == true && text.length > 0){
+	        	document.getElementById('showMsg').innerHTML = '<div align="center" class="alert alert-info">Succesfully Downloaded!</div>'; 
+		    }
+		    else if(browserSupport == false) {
+		    	document.getElementById('showMsg').innerHTML = '<div align="center" class="alert alert-danger">Please use latest versions of Chrome or Mozilla to use this feature.</div>'; 
+		    }
+			    
+	    }
+	    catch(err) {
+	        document.getElementById('showMsg').innerHTML = '<div align="center" class="alert alert-warning">Download Failed!</div>';
+	    }
+	          
+	 });
+});
+</script>
+<!--...................................................JAVASCRIPT Ends .......................................................-->
+
+
+
+</body></html>

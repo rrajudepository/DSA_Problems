@@ -1,0 +1,8 @@
+pet
+peter
+pet
+peter
+rack
+rat
+rack
+rat
