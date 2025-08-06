@@ -62,7 +62,7 @@ _Total Solved: **150+ problems**_
 
 ## 🔗 Connect with Me
 
-- 📧 Email: your.email@example.com
+- 📧 Email: rraju121295@gmail.com
 - 🧑‍💻 LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/rajkishor-ranjan-kumar-780b1bab/)
 
 ---
